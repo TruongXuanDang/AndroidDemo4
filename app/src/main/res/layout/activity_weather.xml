@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WeatherActivity"
+    android:background="@drawable/bg_weather">
+
+    <TextView
+        android:layout_marginTop="100dp"
+        android:id="@+id/tvDestination"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ha noi"
+        android:textSize="30dp"
+        android:textColor="@color/white"
+        android:textAlignment="center"/>
+    <TextView
+        android:id="@+id/tvDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nhiều mây"
+        android:textSize="20dp"
+        android:layout_below="@+id/tvDestination"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textColor="@color/white"/>
+    <TextView
+        android:id="@+id/tvTemperature"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="27°C"
+        android:textSize="50dp"
+        android:layout_below="@+id/tvDescription"
+        android:textColor="@color/white"
+        android:textAlignment="center"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvWeather"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvTemperature"/>
+</RelativeLayout>
