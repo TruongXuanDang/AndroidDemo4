@@ -14,16 +14,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".UserUpdateActivity"></activity>
-        <activity android:name=".UserListActivity">
-
-        </activity>
-        <activity android:name=".UserRegisterActivity">
+        <activity android:name=".FinalTestActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity android:name=".UserUpdateActivity" />
+        <activity android:name=".UserListActivity"></activity>
+        <activity android:name=".UserRegisterActivity">
+
         </activity>
         <activity android:name=".FilesActivity" />
         <activity android:name=".WeatherActivity" />
